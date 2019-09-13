@@ -1,0 +1,557 @@
+@font-face {
+ font-family: "Nick";
+ src: url("fonts/nick.ttf");
+}
+::-webkit-scrollbar-button {width:5px; height:0px;}
+::-webkit-scrollbar-track {background-color:rgba(149, 169, 194, 0.3);}
+::-webkit-scrollbar-thumb {-webkit-border-radius: 0px; border-radius: 0px; background-color: rgba(149, 169, 194, 0.3);}
+::-webkit-scrollbar-thumb:hover{background-color: rgba(149, 169, 194, 0.4);}
+::-webkit-resizer{width:4px; height:0px}
+::-webkit-scrollbar{width: 4px;}
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: #f4f5f9;
+    overflow-x: hidden;
+}
+.bear_1{
+    width: 18%;
+    height: 35%;
+    background: #fff;
+    box-shadow: 0px 0px 25px 2px rgba(149, 169, 194, .2);
+    margin: auto;
+    border-radius: 2px;
+    margin-top: 20%;
+    text-align: center;
+}
+.bear_1 i{
+    color: rgba(67, 83, 255, 1);
+    font-size: 230%;
+    text-shadow: 0px 0px 2.5px rgba(67, 83, 255, 1);
+}
+.bear_1 input{
+    margin-top: 10%;
+    border: none;
+    outline: none;
+    background: rgba(149, 169, 194, .2);
+    width: 65%;
+    height: 10%;
+    border-radius: 2px;
+    text-align: center;
+    color: rgba(149, 169, 194, 1);
+    letter-spacing: 1px;
+    font-size: 82%;
+    text-shadow: 0px 0px 2px rgba(149, 169, 194, 1);
+    font-weight: 500;
+}
+.bear_1 input.top{
+    margin-top: 22.5%;
+}
+.bear_1 input::placeholder{
+    color: rgba(149, 169, 194, 0.8);
+    text-shadow: 0px 0px 2px rgba(149, 169, 194, 0.8);    
+    transition: opacity ease 1s;
+}
+.bear_1 input:hover::placeholder, .bear_1 input:focus::placeholder{
+    opacity: 0;
+}
+.bear_1 div.top{
+    width: 100%;
+    height: 2%;
+}
+.bear_1 div.button{
+    width: 20%;
+    min-height: 1%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
+    background: rgba(117, 129, 255, 1);
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 1.5px;
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 25px 2px rgba(117, 129, 255, 1);
+    transition: background ease 1s, box-shadow ease 1s;
+    font-weight: 500;
+    font-size: 80%;
+    margin: auto;
+    margin-top: 22.5%;
+    cursor: pointer;
+}
+.bear_1 div.button:hover{
+    background: rgba(66, 82, 255, 1);
+    box-shadow: 0px 2px 25px 2px rgba(66, 82, 255, 1);
+}
+.bear_2{
+    width: 23%;
+    height: 10.5%;
+    background: #fff;
+    box-shadow: 0px 0px 25px 2px rgba(149, 169, 194, .2);
+    margin: auto;
+    border-radius: 2px;
+    margin-top: 30%;
+    text-align: center;    
+}
+.bear_2 input{
+    margin-top: 9.5%;
+    border: none;
+    outline: none;
+    background: rgba(149, 169, 194, .2);
+    width: 53%;
+    height: 37%;
+    border-radius: 2px;
+    text-align: center;
+    color: rgba(149, 169, 194, 1);
+    letter-spacing: 1px;
+    font-size: 82%;
+    text-shadow: 0px 0px 2px rgba(149, 169, 194, 1);
+    font-weight: 500;
+    margin-left: 8%;
+    box-shadow: 0px 2px 25px 2px rgba(149, 169, 194, .2);
+}
+.bear_2 input::placeholder{
+    color: rgba(149, 169, 194, 0.8);
+    text-shadow: 0px 0px 2px rgba(149, 169, 194, 0.8);    
+    transition: opacity ease 1s;
+}
+.bear_2 input:hover::placeholder, .bear_2 input:focus::placeholder{
+    opacity: 0;
+}
+.bear_2 div.button{
+    width: 15%;
+    min-height: 1%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: rgba(117, 129, 255, 1);
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 1.5px;
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 25px 2px rgba(117, 129, 255, 1);
+    transition: background ease 1s, box-shadow ease 1s;
+    font-weight: 500;
+    font-size: 70%;
+    margin-top: 9.5%;
+    float: right;
+    margin-right: 10%;
+    cursor: pointer;
+}
+.bear_2 div.button:hover{
+    background: rgba(66, 82, 255, 1);
+    box-shadow: 0px 2px 25px 2px rgba(66, 82, 255, 1);
+}
+.bear_3{
+    width: 50%;
+    height: 60%;
+    margin: auto;
+    margin-top: 12.5%;
+}
+.bear_4{
+    display: inline-block;
+    width: 63.5%;
+    height: 100%;
+    vertical-align: middle;
+}
+.bear_4.right{
+    width: 33.5%;
+    margin-left: 3%;
+    background: #fff;
+    box-shadow: 0px 0px 25px 2px rgba(149, 169, 194, .1);
+    border-radius: 2px;
+}
+.bear_4.right div.button{
+    width: 50%;
+    min-height: 1%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: rgba(117, 129, 255, 1);
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 1.5px;
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 25px 2px rgba(117, 129, 255, 1);
+    transition: background ease 1s, box-shadow ease 1s;
+    font-weight: 500;
+    font-size: 70%;
+    text-align: center;
+    margin: auto;
+    margin-top: 17%;
+    cursor: pointer;
+}
+.bear_4.right div.button.a{
+    width: 30%;
+}
+.bear_4.right div.button:hover{
+    background: rgba(66, 82, 255, 1);
+    box-shadow: 0px 2px 25px 2px rgba(66, 82, 255, 1);
+}
+.bear_4.right input{
+    margin: auto;
+    margin-top: 20%;
+    border: none;
+    outline: none;
+    background: rgba(149, 169, 194, .2);
+    height: 6%;
+    border-radius: 2px;
+    text-align: center;
+    color: rgba(149, 169, 194, 1);
+    letter-spacing: 1px;
+    font-size: 82%;
+    text-shadow: 0px 0px 2px rgba(149, 169, 194, 1);
+    font-weight: 500;  
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 5%; 
+}
+.bear_4.right input.day{
+    width: 20%;
+    margin-left: 6.5%;
+}
+.bear_4.right input.month{
+    width: 20%;
+}
+.bear_4.right input.year{
+    width: 25%;
+}
+.bear_4.right input::placeholder{
+    color: rgba(149, 169, 194, 0.8);
+    text-shadow: 0px 0px 2px rgba(149, 169, 194, 0.8);    
+    transition: opacity ease 1s;
+}
+.bear_4.right input:hover::placeholder, .bear_4.right input:focus::placeholder{
+    opacity: 0;
+}
+.bear_5{
+    width: 100%;
+    height: 10%;
+    background: #fff;
+    box-shadow: 0px 0px 25px 2px rgba(149, 169, 194, .1);
+    border-radius: 2px;
+    color: rgba(117, 129, 255, 1);
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 2px rgba(117, 129, 255, 1);
+    font-weight: 500;
+    font-size: 240%;
+    text-align: center;
+    font-family: 'Nick', cursive;
+    line-height: 70px;
+}
+.bear_5 div{
+    position: absolute;
+    top: 16.2%;
+    left: 53.3%;
+}
+.bear_5 div a{
+    text-decoration: none;
+    font-size: 32%;
+    color: rgba(149, 169, 194, .3);
+    text-shadow: 0px 0px 2px rgba(149, 169, 194, .3);
+    padding: 2px;
+    transition: color ease 1s, text-shadow ease 1s;
+    cursor: pointer;
+    font-weight: 600;
+}
+.bear_5 div a:hover{
+    color: rgba(117, 129, 255, 1);
+    text-shadow: 0px 0px 2px rgba(117, 129, 255, 1);  
+}
+.bear_6{
+    width: 100%;
+    height: 86%;
+    background: #fff;
+    box-shadow: 0px 0px 25px 2px rgba(149, 169, 194, .1);
+    border-radius: 2px;
+    margin-top: 5%;
+    display: none;
+}
+.bear_6.a{
+    display: block;
+}
+.bear_6.a table{
+    width: 95%;
+    margin: auto;
+    height: 100%;
+    color: rgba(149, 169, 194, 1);
+    letter-spacing: 1px;
+    font-size: 85%;
+    text-shadow: 0px 0px 2px rgba(149, 169, 194, 1);
+    font-weight: 500;
+}
+.bear_6.a table td.left{
+    text-align: left;
+}
+.bear_6.a table td.right{
+    text-align: right;
+}
+.bear_6.a table td.right span.green{
+    color: rgba(0, 191, 84, 1);
+    text-shadow: 0px 0px 2px rgba(0, 191, 84, 1);
+    background: rgba(0, 191, 84, 0.2);
+    box-shadow: 0px 0px 25px 2px rgba(0, 191, 84, .2);
+    padding: 3%;
+}
+.bear_6.a table td.right span.red{
+    color: rgba(240, 52, 52, 1);
+    text-shadow: 0px 0px 2px rgba(240, 52, 52, 1);
+    background: rgba(240, 52, 52, 0.2);
+    box-shadow: 0px 0px 25px 2px rgba(240, 52, 52, .2);
+    padding: 3%;
+}
+.bear_6.a table td.right span a{
+    color: rgba(149, 169, 194, 1);
+    letter-spacing: 1px;
+    font-size: 85%;
+    text-shadow: 0px 0px 2px rgba(149, 169, 194, 1);
+    font-weight: 500;
+    text-decoration: none;
+    text-decoration-color: #fff;
+    transition: text-decoration-color ease 0.5s;
+}
+.bear_6.a table td.right span a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgba(149, 169, 194, 1);
+}
+.bear_6 div.top_mes{
+    width: 100%;
+    height: 10%;
+    box-shadow: 0px 0px 25px 2px rgba(149, 169, 194, .1);
+    border-radius: 2px 2px 0px 0px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 1.5px;
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-size: 85%;
+    line-height: 55px;
+}
+.bear_6 div.top_mes.red{
+    background: rgba(240, 52, 52, 1); 
+}
+.bear_6.d div.top_mes.red{
+    font-size: 80%;
+}
+.bear_6 div.top_mes.green{
+   background: rgba(0, 191, 84, 1); 
+}
+.bear_6.b div.money_box{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    padding-top: 8%;
+}
+.bear_6.b div.money_box{
+    color: rgba(149, 169, 194, 1);
+    letter-spacing: 1px;
+    font-size: 82%;
+    text-shadow: 0px 0px 2px rgba(149, 169, 194, 1);
+    font-weight: 500; 
+}
+.bear_6.b div.money_box span{
+    background: rgba(149, 169, 194, 0.2);
+    padding: 2%;
+    box-shadow: 0px 0px 25px 2px rgba(149, 169, 194, .2);
+}
+.bear_6.b div.money_box_2, .bear_6.f div.money_box_2{
+    width: 99%;
+    height: 72%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.bear_6.f div.money_box_2{
+    margin-top: 1%;
+    height: 88%;
+}
+.bear_6.b div.money_box_2 p, .bear_6.f div.money_box_2 p{
+    color: rgba(149, 169, 194, 1);
+    letter-spacing: 1px;
+    font-size: 69%;
+    text-shadow: 0px 0px 2px rgba(149, 169, 194, 1);
+    font-weight: 500; 
+    padding-left: 2%;
+}
+.bear_6.b div.money_box_2 p a, .bear_6.f div.money_box_2 p a{
+    color: rgba(149, 169, 194, 1);
+    text-shadow: 0px 0px 2px rgba(149, 169, 194, 1);
+    text-decoration: none;
+    text-decoration-color: #fff;
+    transition: text-decoration-color ease 0.5s;
+}
+.bear_6.b div.money_box_2 p a:hover, .bear_6.f div.money_box_2 p a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgba(149, 169, 194, 1);
+}
+.bear_6.c table{
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    color: rgba(149, 169, 194, 1);
+    letter-spacing: 1px;
+    font-size: 85%;
+    text-shadow: 0px 0px 2px rgba(149, 169, 194, 1);
+    font-weight: 500;
+}
+.bear_6.c table tr{
+    height: 50px;
+}
+.bear_6.c table tr td.left{
+    text-align: left;
+}
+.bear_6.c table tr td.right{
+    text-align: right;
+}
+.bear_6.c table tr td.right input{
+    border: none;
+    outline: none;
+    background: rgba(149, 169, 194, .2);
+    width: 15%;
+    height: 30px;
+    border-radius: 2px;
+    text-align: center;
+    color: rgba(149, 169, 194, 1);
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 2px rgba(149, 169, 194, 1);
+    font-weight: 500;  
+    padding-left: 2%;
+    padding-right: 2%; 
+    box-shadow: 0px 0px 25px 2px rgba(149, 169, 194, .2);
+}
+.bear_6.c table tr td.right div.check{
+    width: 19%;
+    height: 30px;
+    float: right;
+    border-radius: 2px;
+    cursor: pointer;
+    background: rgba(149, 169, 194, .2);
+    box-shadow: 0px 0px 25px 2px rgba(149, 169, 194, .2);
+}
+.bear_6.c table tr td.right div.check div{
+    width: 50%;
+    height: 100%;
+    border-radius: 2px;
+    transition: left  ease 1s, background  ease 1s, box-shadow  ease 1s;
+    position: relative;
+}
+.bear_6.c table tr td.right div.check div.on{
+    background: rgba(0, 191, 84, 1); 
+    box-shadow: 0px 0px 25px 2px rgba(0, 191, 84, .2);
+    left: 0%;
+}
+.bear_6.c table tr td.right div.check div.off{
+    background: rgba(240, 52, 52, 1);
+    box-shadow: 0px 0px 25px 2px rgba(240, 52, 52, .2);
+    left: 50%;
+}
+.bear_6.c div.button{
+    width: 25%;
+    min-height: 1%;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    background: rgba(117, 129, 255, 1);
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 1.5px;
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 25px 2px rgba(117, 129, 255, 1);
+    transition: background ease 1s, box-shadow ease 1s;
+    font-weight: 500;
+    font-size: 70%;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 5.5%;
+}
+.bear_6.c div.button:hover{
+    background: rgba(66, 82, 255, 1);
+    box-shadow: 0px 2px 25px 2px rgba(66, 82, 255, 1);
+}
+.bear_6.d input, .bear_6.e input{
+    margin: auto;
+    margin-top: 35%;
+    border: none;
+    outline: none;
+    background: rgba(149, 169, 194, .2);
+    height: 7%;
+    border-radius: 2px;
+    text-align: center;
+    color: rgba(149, 169, 194, 1);
+    letter-spacing: 1px;
+    font-size: 82%;
+    text-shadow: 0px 0px 2px rgba(149, 169, 194, 1);
+    font-weight: 500;  
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 5%; 
+}
+.bear_6.d input.day{
+    width: 10%;
+    margin-left: 7%;
+}
+.bear_6.d input.month{
+    width: 10%;
+}
+.bear_6.d input.year{
+    width: 15%;
+}
+.bear_6.d input.reason, .bear_6.e input.reason{
+    width: 20%;
+}
+.bear_6.e input.reason{
+    width: 55.5%;
+    margin-left: 20%; 
+}
+.bear_6.d input::placeholder, .bear_6.e input::placeholder{
+    color: rgba(149, 169, 194, 0.8);
+    text-shadow: 0px 0px 2px rgba(149, 169, 194, 0.8);    
+    transition: opacity ease 1s;
+}
+.bear_6.d input:hover::placeholder, .bear_6.d input:focus::placeholder, .bear_6.e input:hover::placeholder, .bear_6.e input:hover::placeholder{
+    opacity: 0;
+}
+.bear_6.d div.button, .bear_6.e div.button{
+    width: 25%;
+    min-height: 1%;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    background: rgba(117, 129, 255, 1);
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 1.5px;
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 25px 2px rgba(117, 129, 255, 1);
+    transition: background ease 1s, box-shadow ease 1s;
+    font-weight: 500;
+    font-size: 60%;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 10%;
+    margin-left: 5%;
+    display: inline-block;
+}
+.bear_6.d div.button.left, .bear_6.e div.button.left{
+    margin-left: 20.5%; 
+}
+.bear_6.d div.button:hover, .bear_6.e div.button:hover{
+    background: rgba(66, 82, 255, 1);
+    box-shadow: 0px 2px 25px 2px rgba(66, 82, 255, 1);
+}
+.bear_6.e div.button{
+    margin-top: 45%;
+}
